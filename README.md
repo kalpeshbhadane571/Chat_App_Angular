@@ -4594,24 +4594,12 @@ You can download the PDF and Epub version of this repository from the latest run
 
 274. ### What is content projection?
      Content projection is a pattern in which you insert, or project, the content you want to use inside another component.
+		 
+	**[⬆ Back to Top](#table-of-contents)**
 275. ### What is ng-content and its purpose?
      The ng-content is used to insert the content dynamically inside the component that helps to increase component reusability. 
-276. ###what-is-mergeMap
+276. ### What-is-mergeMap
 	The Angular MergeMap maps each value from the source observable into an inner observable, subscribes to it, and then starts emitting the values from it 	replacing the original value. It creates a new inner observable for every value it receives from the Source. Unlike SwitchMap, MergeMap does not cancel any of 	       its inner observables. It merges the values from all of its inner observables and emits the values back into the stream.
-		  
-let obs= of(1,2,3,4)
- 
-obs.pipe(
-   mergeMap( val => {
-     return of(val*2)  //Returning observable
-   })
-)
-.subscribe(ret=> {
-  console.log('Recd from mergeMap : ' + ret);
- })
- 
-//Output
-Recd from mergeMap: 2
-Recd from mergeMap: 4
-Recd from mergeMap: 6
-Recd from mergeMap: 8
+	https://www.tektutorialshub.com/angular/using-mergemap-in-angular/
+		   
+	**[⬆ Back to Top](#table-of-contents)**
